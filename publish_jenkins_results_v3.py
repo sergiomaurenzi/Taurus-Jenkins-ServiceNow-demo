@@ -1,5 +1,5 @@
 """ 
-Publish Jenkins result into ServiceNow instance through the SN API
+Python Script to publish Jenkins-api results into ServiceNow instance through the SN API
 Developed by Simon Morris - ServiceNow
 Modified by Sergio Maurenzi - Performen
 """
@@ -21,6 +21,7 @@ import pytz
 parser = argparse.ArgumentParser()
 parser.add_argument("job")
 parser.add_argument("build")
+parser.add_argument("git_tag_message")
 parser.add_argument("jenkins_url")
 parser.add_argument("jenkins_user")
 parser.add_argument("jenkins_pass")
@@ -65,6 +66,7 @@ def publish_results():
     print ">>>>>revision=%s" % revision
     print ">>>>>duration=%s" % duration
     print ">>>>>durationSeconds=%s" % durationSeconds
+    print ">>>>>gitTagMessage=%$" % args.git_tag_message
     
     output['job'] = args.job
     output['build_number'] = args.build
