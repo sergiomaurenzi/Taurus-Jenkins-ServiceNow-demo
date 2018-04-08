@@ -1,9 +1,0 @@
-# Reporting sobre Blazemeter
-modules:
-  blazemeter:
-    token: 7f7f31a6a99749d5cc236600:02542d2b9e821e739787e3acb5b35f5ee5cd39ddb5d59d299f47a7f35ce81ac6ef681ba0  # API key
-reporting:
-    - module: blazemeter
-      report-name: Easytravel-LoadTest-Demo
-      test: Test-Easytravel.yml
-      project: Default

@@ -1,6 +1,0 @@
-Created the tree successfully using /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_18-59-09.359010/modified_requests.jmx
-Starting the test @ Sun Apr 08 18:59:33 ART 2018 (1523224773135)
-Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
-Command: Shutdown received from /127.0.0.1
-Tidying up ...    @ Sun Apr 08 19:00:05 ART 2018 (1523224805712)
-... end of run
