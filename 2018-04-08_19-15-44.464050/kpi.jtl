@@ -1,0 +1,46 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,bytes,grpThreads,allThreads,Latency,Hostname
+1523225771074,9437,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,200,OK,LT-Easytravel 1-1,true,2099236,4,4,804,MacBook-Pro-de-Sergio-2.local
+1523225780513,789,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-1,true,347,4,4,789,MacBook-Pro-de-Sergio-2.local
+1523225781303,228,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-1,true,347,4,4,228,MacBook-Pro-de-Sergio-2.local
+1523225781532,2443,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations,200,OK,LT-Easytravel 1-1,true,71640,5,5,1376,MacBook-Pro-de-Sergio-2.local
+1523225774038,10434,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,200,OK,LT-Easytravel 1-2,true,1972037,5,5,616,MacBook-Pro-de-Sergio-2.local
+1523225784475,716,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-2,true,347,5,5,716,MacBook-Pro-de-Sergio-2.local
+1523225785192,492,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-2,true,347,5,5,492,MacBook-Pro-de-Sergio-2.local
+1523225777051,12310,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,200,OK,LT-Easytravel 1-3,true,1972287,7,7,833,MacBook-Pro-de-Sergio-2.local
+1523225785685,4335,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations,200,OK,LT-Easytravel 1-2,true,70831,7,7,2926,MacBook-Pro-de-Sergio-2.local
+1523225789362,929,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-3,true,347,7,7,929,MacBook-Pro-de-Sergio-2.local
+1523225785590,4808,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/,200,OK,LT-Easytravel 1-1,true,368581,7,7,1651,MacBook-Pro-de-Sergio-2.local
+1523225790292,229,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-3,true,347,7,7,229,MacBook-Pro-de-Sergio-2.local
+1523225780078,12754,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,200,OK,LT-Easytravel 1-4,true,1971929,8,8,937,MacBook-Pro-de-Sergio-2.local
+1523225790522,2923,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations,200,OK,LT-Easytravel 1-3,true,65886,8,8,1324,MacBook-Pro-de-Sergio-2.local
+1523225792860,911,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-4,true,347,8,8,911,MacBook-Pro-de-Sergio-2.local
+1523225793772,473,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-4,true,347,8,8,473,MacBook-Pro-de-Sergio-2.local
+1523225791634,3992,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/,200,OK,LT-Easytravel 1-2,true,368581,9,9,1158,MacBook-Pro-de-Sergio-2.local
+1523225794245,2893,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations,200,OK,LT-Easytravel 1-4,true,71643,9,9,1388,MacBook-Pro-de-Sergio-2.local
+1523225783086,14217,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,200,OK,LT-Easytravel 1-5,true,2050669,9,9,747,MacBook-Pro-de-Sergio-2.local
+1523225794800,3044,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/italy/,200,OK,LT-Easytravel 1-1,true,114557,9,9,1066,MacBook-Pro-de-Sergio-2.local
+1523225797306,950,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-5,true,347,10,10,950,MacBook-Pro-de-Sergio-2.local
+1523225798257,894,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-5,true,347,10,10,894,MacBook-Pro-de-Sergio-2.local
+1523225795058,5367,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/,200,OK,LT-Easytravel 1-3,true,368589,10,10,1052,MacBook-Pro-de-Sergio-2.local
+1523225786095,15485,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,200,OK,LT-Easytravel 1-6,true,1971910,11,11,1039,MacBook-Pro-de-Sergio-2.local
+1523225799151,2693,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations,200,OK,LT-Easytravel 1-5,true,39355,11,11,1347,MacBook-Pro-de-Sergio-2.local
+1523225801582,758,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-6,true,347,11,11,758,MacBook-Pro-de-Sergio-2.local
+1523225802341,550,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-6,true,347,11,11,550,MacBook-Pro-de-Sergio-2.local
+1523225800024,2909,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/italy/,200,OK,LT-Easytravel 1-2,true,114557,11,11,1085,MacBook-Pro-de-Sergio-2.local
+1523225798753,6461,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/,200,OK,LT-Easytravel 1-4,true,368589,12,12,1223,MacBook-Pro-de-Sergio-2.local
+1523225802892,3143,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations,200,OK,LT-Easytravel 1-6,true,70822,12,12,1417,MacBook-Pro-de-Sergio-2.local
+1523225789108,18944,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,200,OK,LT-Easytravel 1-7,true,2099188,13,13,1072,MacBook-Pro-de-Sergio-2.local
+1523225808054,1787,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-7,true,347,13,13,1787,MacBook-Pro-de-Sergio-2.local
+1523225803457,7063,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/,200,OK,LT-Easytravel 1-5,true,368589,14,14,1330,MacBook-Pro-de-Sergio-2.local
+1523225809842,843,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php,200,OK,LT-Easytravel 1-7,true,347,14,14,843,MacBook-Pro-de-Sergio-2.local
+1523225804823,6105,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/italy/,200,OK,LT-Easytravel 1-3,true,114557,14,14,1072,MacBook-Pro-de-Sergio-2.local
+1523225810686,607,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,LT-Easytravel 1-7,false,2031,14,14,0,MacBook-Pro-de-Sergio-2.local
+1523225810152,1139,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,LT-Easytravel 1-14,false,2682,14,14,0,MacBook-Pro-de-Sergio-2.local
+1523225810930,365,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,LT-Easytravel 1-3,false,2031,14,14,0,MacBook-Pro-de-Sergio-2.local
+1523225809610,1691,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/italy/,Non HTTP response code: java.net.SocketException,Non HTTP response message: Socket closed,LT-Easytravel 1-4,false,1486,14,14,1680,MacBook-Pro-de-Sergio-2.local
+1523225801135,1551,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,200,OK,LT-Easytravel 1-11,true,31518,14,14,1026,MacBook-Pro-de-Sergio-2.local
+1523225804141,2067,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,200,OK,LT-Easytravel 1-12,true,31554,14,14,1371,MacBook-Pro-de-Sergio-2.local
+1523225802934,1917,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,200,OK,LT-Easytravel 1-2,true,31565,12,12,1246,MacBook-Pro-de-Sergio-2.local
+1523225798126,2124,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,200,OK,LT-Easytravel 1-10,true,31492,12,12,1634,MacBook-Pro-de-Sergio-2.local
+1523225792117,1654,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,200,OK,LT-Easytravel 1-8,true,31526,11,11,1160,MacBook-Pro-de-Sergio-2.local
+1523225795120,1893,http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/,200,OK,LT-Easytravel 1-9,true,31510,11,11,1236,MacBook-Pro-de-Sergio-2.local

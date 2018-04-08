@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.4" jmeter="3.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="LT-Easytravel" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.1.1.312. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="User-Agent" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">Default</stringProp>
+          </elementProp>
+          <elementProp name="Accept-Language" elementType="Header">
+            <stringProp name="Header.name">Accept-Language</stringProp>
+            <stringProp name="Header.value">es-ES,es;q=0.9,en;q=0.8</stringProp>
+          </elementProp>
+          <elementProp name="Accept-Encoding" elementType="Header">
+            <stringProp name="Header.name">Accept-Encoding</stringProp>
+            <stringProp name="Header.value">gzip, deflate</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="BASE_URL_1" elementType="Argument">
+            <stringProp name="Argument.name">BASE_URL_1</stringProp>
+            <stringProp name="Argument.value">ec2-54-84-118-207.compute-1.amazonaws.com</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+        <boolProp name="HTTPSampler.image_parser">true</boolProp>
+        <intProp name="HTTPSampler.concurrentPool">6</intProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+        <collectionProp name="DNSCacheManager.servers"/>
+        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager">
+        <collectionProp name="AuthManager.auth_list"/>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <longProp name="ThreadGroup.start_time">1363247040000</longProp>
+        <longProp name="ThreadGroup.end_time">1363247040000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <longProp name="ThreadGroup.duration">0</longProp>
+        <longProp name="ThreadGroup.delay">0</longProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+          <intProp name="HTTPSampler.port">8079</intProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">0</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="journey_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">journey_id</stringProp>
+                <stringProp name="Argument.value">11</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="info" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">info</stringProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+          <intProp name="HTTPSampler.port">8079</intProp>
+          <stringProp name="HTTPSampler.path">rating/ratings.php</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://ec2-54-84-118-207.compute-1.amazonaws.com:8079</stringProp>
+              </elementProp>
+              <elementProp name="X-Requested-With" elementType="Header">
+                <stringProp name="Header.name">X-Requested-With</stringProp>
+                <stringProp name="Header.value">XMLHttpRequest</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[2]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">2994</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="journey_id" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">journey_id</stringProp>
+                <stringProp name="Argument.value">11</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="info" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">info</stringProp>
+                <stringProp name="Argument.value">1</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+          <intProp name="HTTPSampler.port">8079</intProp>
+          <stringProp name="HTTPSampler.path">rating/ratings.php</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/javascript, */*; q=0.01</stringProp>
+              </elementProp>
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://ec2-54-84-118-207.compute-1.amazonaws.com:8079</stringProp>
+              </elementProp>
+              <elementProp name="X-Requested-With" elementType="Header">
+                <stringProp name="Header.name">X-Requested-With</stringProp>
+                <stringProp name="Header.value">XMLHttpRequest</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[3]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">778</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations?_=1523225235535" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="_" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">_</stringProp>
+                <stringProp name="Argument.value">1523225235535</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+          <intProp name="HTTPSampler.port">8079</intProp>
+          <stringProp name="HTTPSampler.path">CalculateRecommendations</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html, */*; q=0.01</stringProp>
+              </elementProp>
+              <elementProp name="X-Requested-With" elementType="Header">
+                <stringProp name="Header.name">X-Requested-With</stringProp>
+                <stringProp name="Header.value">XMLHttpRequest</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded; charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[4]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">3263</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rb_ecc29184-1ae2-46dd-96fe-06997671fc57" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">$a=1%7C1%7C_load_%7C_load_%7C-%7C1523225228488%7C1523225234537%7C395%2C2%7C2%7C_onload_%7C_load_%7C-%7C1523225234534%7C1523225234537%7C395$svrid=3$rId=RID_2418$rpId=1063402770$domR=1523225234531$w=1158$h=668$sw=1280$sh=800$nt=a0b1523225228488e13f13g13h13i13k18l239m442n284o3777p3778q3877r6043s6046t6049$V=5219|c$S=3047$fd=j1.8.1^so1.7^six$url=http%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2F$title=easyTravel%20-%20One%20step%20to%20happiness$latC=9$visitID=CRIPCAFIIECKICDCNPAEEUEFNACLCJILPK$fId=425229283_972$v=10137171222133618$vID=1523220101601400ONIHRLIPQVASHLV5IOR9LJS3S4S4H$time=1523225237328</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+          <intProp name="HTTPSampler.port">8079</intProp>
+          <stringProp name="HTTPSampler.path">rb_ecc29184-1ae2-46dd-96fe-06997671fc57</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://ec2-54-84-118-207.compute-1.amazonaws.com:8079</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[5]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1799</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rb_ecc29184-1ae2-46dd-96fe-06997671fc57" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">$svrid=3$3p=syndication.twitter.com%7Cg%7C1%7C0%7C0%7C0%7C5502_5592%7C90%7C90%7C90%3Bec2-54-84-118-207.compute-1.amazonaws.com%7Cu%7C26%7C0%7C0%7C0%7C0%7C26%7C%7C0%7C0%7C0%7C294_4956%7C2300%7C503%7C4529%7C12%7C0%7C0%7C0%7C0%7C12%7C%7C0%7C0%7C0%7C290_3314%7C1305%7C638%7C2872%7C5%7C0%7C0%7C0%7C289_1252%7C660%7C444%7C962%7C7%7C0%7C0%7C0%7C293_2944_2981_3592_3785_4525_7047_8346%7C1350%7C611%7C2650%3Bajax.googleapis.com%7C4%7C1%7C0%7C0%7C0%7C0%7C1%7C%7C0%7C0%7C0%7C290_525%7C235%7C235%7C235%3Bapis.google.com%7Ck%7C1%7C0%7C0%7C0%7C0%7C1%7C%7C0%7C0%7C0%7C292_931%7C638%7C638%7C638%7C3%7C0%7C0%7C0%7C1344_1881_3853_4404%7C435%7C230%7C541%3Bassets.dynatrace.com%7C2%7C1%7C0%7C0%7C0%7C0%7C1%7C%7C0%7C0%7C0%7C294_3884%7C3589%7C3589%7C3589%3Bcdnjs.cloudflare.com%7C4%7C2%7C0%7C0%7C0%7C0%7C2%7C%7C0%7C0%7C0%7C365_897%7C527%7C522%7C533%3Bet-demo2-thirdpartycontentserver.cfapps.io%7C2%7C1%7C0%7C0%7C0%7C0%7C1%7C%7C0%7C0%7C0%7C429_5220%7C4791%7C4791%7C4791%3Bsecure.statcounter.com%7C4%7C1%7C0%7C0%7C0%7C0%7C1%7C%7C0%7C0%7C0%7C436_2420%7C1985%7C1985%7C1985%3Bplatform.twitter.com%7Ck%7C3%7C0%7C0%7C0%7C0%7C3%7C%7C0%7C0%7C0%7C438_2915_3592_3752_3812_4114%7C979%7C160%7C2477%7C3%7C0%7C0%7C0%7C3804_3971_4143_4427%7C199%7C148%7C283%3Bplatform.linkedin.com%7Ck%7C1%7C0%7C0%7C0%7C0%7C1%7C%7C0%7C0%7C0%7C438_3100%7C2662%7C2662%7C2662%7C1%7C0%7C0%7C0%7C3106_3385%7C279%7C279%7C279%3Bassets.pinterest.com%7C6%7C1%7C0%7C0%7C0%7C0%7C1%7C%7C0%7C0%7C0%7C438_3108%7C2669%7C2669%7C2669%7C2%7C0%7C0%7C0%7C0%7C2%7C%7C0%7C0%7C0%7C440_3112_3128_3355%7C1449%7C227%7C2672%3Bfonts.googleapis.com%7Cg%7C1%7C0%7C0%7C0%7C1286_1562%7C276%7C276%7C276%3Bfonts.gstatic.com%7Cg%7C1%7C0%7C0%7C0%7C1592_1981%7C389%7C389%7C389%3Bconnect.facebook.net%7C4%7C1%7C0%7C0%7C0%7C0%7C1%7C%7C0%7C0%7C0%7C2971_3546%7C575%7C575%7C575%3Bc.statcounter.com%7Cg%7C1%7C0%7C0%7C0%7C3054_3636%7C582%7C582%7C582%3Bstatic.licdn.com%7C2%7C1%7C0%7C0%7C0%7C0%7C1%7C%7C0%7C0%7C0%7C3417_3934%7C517%7C517%7C517%3Bwww.facebook.com%7Cg%7C5%7C0%7C0%7C0%7C3621_4851_5016_5307%7C452%7C290%7C966%3Bstaticxx.facebook.com%7C4%7C2%7C0%7C0%7C0%7C0%7C2%7C%7C0%7C0%7C0%7C3632_4224%7C486%7C382%7C590%3Baccounts.google.com%7Cg%7C1%7C0%7C0%7C0%7C4099_4739%7C640%7C640%7C640%3Blog.pinterest.com%7Cg%7C1%7C0%7C0%7C0%7C4370_4713%7C344%7C344%7C344$rt=-1523225228488%3Bhttps%3A%2F%2Fsyndication.twitter.com%2Fi%2Fjot%7Cb5502e0m90Bi%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fcss%2FBaseProd.css%7Cb289e0f0g0h0i0k154l349m624u30290v29991w29991%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fcss%2Ffooter.css%7Cb289e0f29g29h29i218k218l440m444u4719v4422w4422%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fcss%2Frime.css%7Cb289e0f29g29h29i223k223l480m962u62972v62673w62673%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fcss%2Frating.css%7Cb289e0f32g32h32i245k245l521m527u3037v2740w2740%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fcss%2Forange.css%7Cb289e0f30g30h30i245k245l545m750u19860v19561w19561%7Chttp%3A%2F%2Fajax.googleapis.com%2Fajax%2Flibs%2Fwebfont%2F1.4.7%2Fwebfont.js%7Cb290e0f32g84h84i84k84l234m235u7258v6756w17698%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjs%2Fversion.js%7Cb290e0f0g0h0i0k444l637m638u334v27w27%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjs%2FdtagentApi.js%7Cb291e0f0g0h0i0k499l730m731u2718v2407w2407%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjs%2FFrameworkProd.js%7Cb291e0f0g0h0i0k522l735m742u5000v4689w4689%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjs%2Fjquery.formLabels1.0.js%7Cb291e0f0g0h0i0k622l813m825u11273v10960w10960%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjs%2FheaderRotation.js%7Cb291e0f0g0h0i0k637l830m831u1126v817w817%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjs%2Frating.js%7Cb292e0f0g0h0i0k731l975m999u10580v10267w10267%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjs%2Frecommendation.js%7Cb292e0f0g0h0i0k741l1001m1005u1078v769w769%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fproblempatterns%2Fchangedetectionlib.js%7Cb292e0f0g0h0i0k749l1018m1019u305v0w0%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjs%2Fusertimings.js%7Cb292e0f0g0h0i0k825l1039m1040u786v477w477%7Chttps%3A%2F%2Fapis.google.com%2Fjs%2Fplusone.js%7Cb292e0f31g82h82i256j82k256l599m638u18202v16878w44153%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjavax.faces.resource%2Fjsf.js.jsf%3Fln%3Djavax.faces%7Cb293e0f0g0h0i0k830l1044m1340u29344v28874w28874%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjavax.faces.resource%2Fbridge.js.jsf%3Frand%3D643048655%7Cb293e0f0g0h0i0k959l1163m1553u97579v97097w97097%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjavax.faces.resource%2Fcompat.js.jsf%7Cb293e0f0g0h0i0k986l1264m1268u16410v15968w15968%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjavax.faces.resource%2Ficefaces-compat.js.jsf%7Cb293e0f0g0h0i0k1002l1314m2650u295259v294765w294765%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fapple%2Fapple.png%7Cb294e0f0g0h0i0k2683l3022m3022u1289v993w993%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fandroidbutton.png%7Cb294e0f0g0h0i0k2685l3048m3050u1800v1502w1502%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Ffacebookbutton.png%7Cb294e0f0g0h0i0k2685l3051m3054u1824v1526w1526%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Ftwitterbutton.png%7Cb294e0f0g0h0i0k2685l3053m3057u1786v1488w1488%7Chttps%3A%2F%2Fassets.dynatrace.com%2Fglobal%2Ficons%2Ffavicon.ico%7Cb294e0m3589u0v0w0%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Frssbutton.png%7Cb294e0f0g0h0i0k3020l3228m3229u1908v1610w1610%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fprivacypolicy_5Flock.png%7Cb295e0f0g0h0i0k4148l4455m4458u1566v1268w1268%7Chttp%3A%2F%2Fcdnjs.cloudflare.com%2Fajax%2Flibs%2Fjquery%2F1.8.1%2Fjquery.js%7Cb364e0m533u0v0w0%7Chttp%3A%2F%2Fcdnjs.cloudflare.com%2Fajax%2Flibs%2Fjquery%2F1.8.1%2Fjquery.min.js%7Cb365e0m522u0v0w0%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fheader1.png%7Cb427e0f0g0h0i0k3097l3390m4529u241890v241671w241671%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fpromotion%2Fbanner.png%7Cb427e0f0g0h0i0k3129l3436m3461u7252v6954w6954%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fpromotion%2Fbanner_5FHawaii.png%7Cb427e0f0g0h0i0k3131l3443m3463u3638v3340w3340%7Chttp%3A%2F%2Fet-demo2-thirdpartycontentserver.cfapps.io%2Fimage%2Froad1.png%7Cb428e0m4791u0v0w0%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fxmlhttp%2Fcss%2Fxp%2Fcss-images%2Fspacer.gif%7Cb431e0f0g0h0i0k3438l3704m3711u287v43w43%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Ftravelgear.png%7Cb435e0f0g0h0i0k3519l3780m3784u4794v4496w4496%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fimagegallery.jpg%7Cb435e0f0g0h0i0k3461l3704m3723u14156v13855w13855%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Feasytravel-amp.png%7Cb435e0f0g0h0i0k3703l3984m4311u29810v29510w29510%7Chttps%3A%2F%2Fsecure.statcounter.com%2Fcounter%2Fcounter.js%7Cb436e0m1985u0v0w0%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fplugins%2FThirdPartyJQueryEffectsCloudflare%2FjQueryEffects.js%7Cb438e0f0g0h0i0k1985l2184m2185u884v658w658%7Chttp%3A%2F%2Fplatform.twitter.com%2Fwidgets.js%7Cb438e0m2477u0v0w0%7Chttps%3A%2F%2Fplatform.linkedin.com%2Fin.js%7Cb438e0m2662u0v0w0%7Chttps%3A%2F%2Fassets.pinterest.com%2Fimages%2Fpidgets%2Fpinit_5Ffg_5Fen_5Frect_5Fgray_5F20.png%7Cb438e0m2669u0v0w0%7Chttps%3A%2F%2Fassets.pinterest.com%2Fjs%2Fpinit.js%7Cb440e0m2672u0v0w0%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjs%2FGlobalProd.js%7Cb441e0f0g0h0i0k2532l2729m2806u59141v58828w58828%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fjs%2Fjquery.js%7Cb441e0f0g0h0i0k2536l2863m2872u8618v8307w8307%7Chttp%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DPacifico%7Cb1286e0f4g4h4i4k4l273m276u951v437w1457%7Chttps%3A%2F%2Fapis.google.com%2F_5F%2Fscs%2Fapps-static%2F_5F%2Fjs%2Fk%3Doz.gapi.es.ktq2e3L1j68.O%2Fm%3Dplusone%2Frt%3Dj%2Fsv%3D1%2Fd%3D1%2Fed%3D1%2Fam%3DAQE%2Frs%3DAGLTcCNotQl5iyROTuxOGXS-vOM3mN7FPA%2Fcb%3Dgapi.loaded_5F0%7Cb1344e0m537u0v0w0%7Chttp%3A%2F%2Ffonts.gstatic.com%2Fs%2Fpacifico%2Fv12%2FFwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2%7Cb1592e0f0g0h0i0k4l388m389u21088v20684w20684%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fheader.png%7Cb2962e0f0g0h0i0k287l497m503u4653v4355w4355%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fmenupunkt_5Ftrennung_5Ftransparent.png%7Cb2962e0f0g0h0i0k1499l1812m1813u532v236w236%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fgradient%2FVerlauf_5FGrau_5FLoginbox.png%7Cb2970e0f0g0h0i0k1561l1896m1897u1312v1014w1014%7Chttp%3A%2F%2Fconnect.facebook.net%2Fen_5FUS%2Fall.js%23xfbml%3D1%7Cb2971e0f14g90h90i381j92k381l569m575u67458v66158w216351%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Frating%2Fratings.php%7Cb2981e0f0g0h0i0k335l573m611u402v50w50z1%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fjourney_5Fbox.png%7Cb2992e0f0g0h0i0k352l547m1531u117630v117328w117328%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fsearchbox.png%7Cb2992e0f0g0h0i0k356l572m605u1482v1184w1184%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fcss%2Fcss-images%2Fajax-loader.gif%7Cb2995e0f0g0h0i0k470l666m678u9725v9427w9427%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fgradient%2FVerlauf_5FOrange_5FHauptfeld.png%7Cb2995e0f0g0h0i0k351l561m602u1336v1038w1038%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fgradient%2FVerlauf_5FGrau_5FganzeBreite.png%7Cb3006e0f0g0h0i0k559l886m894u1318v1020w1020%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fgradient%2FVerlauf_5FOrange_5FButton_5F1.png%7Cb3007e0f0g0h0i0k666l946m947u1313v1015w1015%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fcss%2Fcss-images%2Fcal_5Fbutton.gif%7Cb3008e0f0g0h0i0k886l1130m1135u1340v1042w1042%7Chttp%3A%2F%2Fc.statcounter.com%2Ft.php%7Cb3054e0m582u0v0w0%7Chttps%3A%2F%2Fplatform.linkedin.com%2Fjs%2FsecureAnonymousFramework%3Fv%3D1.0.246-1429%26lang%3Den_5FUS%7Cb3106e0m279u0v0w0%7Chttp%3A%2F%2Fassets.pinterest.com%2Fjs%2Fpinit_5Fmain.js%3F0.48523686247377507%7Cb3128e0m227u0v0w0%7Chttps%3A%2F%2Fstatic.licdn.com%2Fscds%2Fcommon%2Fu%2Fimages%2Fapps%2Fconnect%2Fsprites%2Fsprite_5Fconnect_5Fv14.png%7Cb3417e0f4g104h104i247j104k247l508m517u43249v41680w42058%7Chttp%3A%2F%2Fplatform.twitter.com%2Fwidgets.js%7Cb3592e0m160u0v0w0%7Chttps%3A%2F%2Fwww.facebook.com%2Fimpression.php%2Ff3b9f7355d14318%2F%3Flid%3D115%26payload%3D_257B_2522source_2522_253A_2522jssdk_2522_257D%7Cb3621e0m316u0v0w0%7Chttps%3A%2F%2Fwww.facebook.com%2Fimpression.php%2Ff3660fb4bd369d8%2F%3Flid%3D115%26payload%3D_257B_2522source_2522_253A_2522jssdk_2522_257D%7Cb3621e0m315u0v0w0%7Chttp%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_5Farbiter%2Fr%2FFdM1l_5FdpErI.js%3Fversion%3D42%23channel%3Df7f0914b460e68%26origin%3Dhttp_253A_252F_252Fec2-54-84-118-207.compute-1.amazonaws.com_253A8079%7Cb3632e0m382u0v0w0Bi0%7Chttps%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_5Farbiter%2Fr%2FFdM1l_5FdpErI.js%3Fversion%3D42%23channel%3Df7f0914b460e68%26origin%3Dhttp_253A_252F_252Fec2-54-84-118-207.compute-1.amazonaws.com_253A8079%7Cb3634e0m590u0v0w0Bi1%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Flogo_5Flayer_5Fbottom.png%7Cb3768e0f0g0h0i0k762l1100m1125u21249v20949w20949%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fgradient%2FVerlauf_5FGrau_5FHauptfeld.png%7Cb3770e0f0g0h0i0k368l669m679u1307v1009w1009%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Fimg%2Fbooking%2FBooking_5Ftransaction_5Ftextbox_5Fmedium1_5Fpage_5F3.png%7Cb3774e0f0g0h0i0k385l683m688u3257v2959w2959%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2Frating%2Fratings.php%7Cb3785e0f0g0h0i0k436l739m740u402v50w50z1%7Chttps%3A%2F%2Fplatform.twitter.com%2Fwidgets%2Fwidget_5Fiframe.334cd80b7ad09367efd2aa4bc8c5acf3.html%3Forigin%3Dhttp_253A_252F_252Fec2-54-84-118-207.compute-1.amazonaws.com_253A8079%7Cb3804e0m167u0v0w0Bi7%7Chttps%3A%2F%2Fplatform.twitter.com%2Fjs%2Fbutton.f3986cd950460e8c22539c862b9466c0.js%7Cb3812e0m303u0v0w0%7Chttps%3A%2F%2Fapis.google.com%2F_5F%2Fscs%2Fapps-static%2F_5F%2Fjs%2Fk%3Doz.gapi.es.ktq2e3L1j68.O%2Fm%3Dauth%2Fexm%3Dplusone%2Frt%3Dj%2Fsv%3D1%2Fd%3D1%2Fed%3D1%2Fam%3DAQE%2Frs%3DAGLTcCNotQl5iyROTuxOGXS-vOM3mN7FPA%2Fcb%3Dgapi.loaded_5F1%7Cb3853e0m230u0v0w0%7Chttps%3A%2F%2Fapis.google.com%2Fu%2F0%2Fse%2F0%2F_5F%2F%2B1%2Ffastbutton%7Cb3863e0f0g0h0i0k220l535m541u4916v3921w12168Bi2%7Chttps%3A%2F%2Fwww.facebook.com%2Fplugins%2Flike.php%7Cb3885e0f0g0h0i0k10l367m378u14932v13640w49681Bi%7Chttps%3A%2F%2Fwww.facebook.com%2Fplugins%2Flike.php%7Cb3886e0f10g117h117i450j118k450l811m966u14208v1348w38865Bi5%7Chttps%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2FpostmessageRelay%7Cb4099e0m640u0v0w0Bi8%7Cplatform.twitter.com%2F..%2F..llow_5Fbutton.334cd80b7ad09367efd2aa4bc8c5acf3.en.html%23dnt%3Dfalse%26id%3Dtwitter-widget-0%26lang%3Den%26screen_5Fname%3Ddynatrace%26show_5Fcount%3Dtrue%26show_5Fscreen_5Fname%3Dtrue%26size%3Dm%26time%3D1523225232623%7Cb4143e0m148u0v0w0Bi3%7Cplatform.twitter.com%2F..%2F..al_5Freferer%3Dhttp_253A_252F_252Fec2-54-84-118-207.compute-1.amazonaws.com_253A8079_252F%26size%3Dm%26text%3DeasyTravel_2520-_2520One_2520step_2520to_2520happiness%26time%3D1523225232626%26type%3Dshare%26url%3Ddynatrace%7Cb4143e0m283u0v0w0Bi6%7Chttps%3A%2F%2Flog.pinterest.com%2F%7Cb4370e0m344u0v0w0%7Chttps%3A%2F%2Fwww.facebook.com%2Fplugins%2Flike.php%7Cb5016e0f0g0h0i0k4l272m290u15000v3247w49682Bi4%7Chttp%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2FCalculateRecommendations%3F_5F%3D1523225235535%7Cb7047e0f0g0h0i0k6l1297m1299u2220v1931w1931z1$url=http%3A%2F%2Fec2-54-84-118-207.compute-1.amazonaws.com%3A8079%2F$title=easyTravel%20-%20One%20step%20to%20happiness$latC=3$visitID=CRIPCAFIIECKICDCNPAEEUEFNACLCJILPK$fId=425229283_972$v=10137171222133618$vID=1523220101601400ONIHRLIPQVASHLV5IOR9LJS3S4S4H$time=1523225239350</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+          <intProp name="HTTPSampler.port">8079</intProp>
+          <stringProp name="HTTPSampler.path">rb_ecc29184-1ae2-46dd-96fe-06997671fc57</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Origin" elementType="Header">
+                <stringProp name="Header.name">Origin</stringProp>
+                <stringProp name="Header.value">http://ec2-54-84-118-207.compute-1.amazonaws.com:8079</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">text/plain;charset=UTF-8</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[6]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">2024</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+          <intProp name="HTTPSampler.port">8079</intProp>
+          <stringProp name="HTTPSampler.path">amp/</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[7]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">1608</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/italy/" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">${BASE_URL_1}</stringProp>
+          <intProp name="HTTPSampler.port">8079</intProp>
+          <stringProp name="HTTPSampler.path">amp/italy/</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Upgrade-Insecure-Requests" elementType="Header">
+                <stringProp name="Header.name">Upgrade-Insecure-Requests</stringProp>
+                <stringProp name="Header.value">1</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[8]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer" enabled="true">
+            <stringProp name="ConstantTimer.delay">4395</stringProp>
+          </ConstantTimer>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

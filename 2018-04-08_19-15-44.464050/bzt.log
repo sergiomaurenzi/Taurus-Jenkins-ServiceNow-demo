@@ -1,0 +1,633 @@
+[2018-04-08 19:15:44,367 INFO root] Taurus CLI Tool v1.11.0
+[2018-04-08 19:15:44,367 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/var/folders/db/22vnvx8j4xz2xw6yvkfbmkr80000gn/T/bzt_dtk4WH.log', 'option': None, 'aliases': []}
+[2018-04-08 19:15:44,367 DEBUG root] Python: CPython 2.7.12
+[2018-04-08 19:15:44,367 DEBUG root] OS: ('Darwin', 'MacBook-Pro-de-Sergio-2.local', '17.5.0', 'Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2018-04-08 19:15:44,367 INFO root] Starting with configs: ['LT-Easytravel.yml', 'bzm-report-easytravel-demo.yml']
+[2018-04-08 19:15:44,368 DEBUG root] Using personal config: /Users/sergiomaurenzi/.bzt-rc
+[2018-04-08 19:15:44,368 INFO Engine] Configuring...
+[2018-04-08 19:15:44,368 DEBUG Engine] Reading extension configs from: /usr/local/etc/bzt.d
+[2018-04-08 19:15:44,368 DEBUG Engine] Base configs list: ['/usr/local/lib/python2.7/site-packages/bzt/resources/base-config.yml', '/usr/local/etc/bzt.d/99-installID.yml']
+[2018-04-08 19:15:44,368 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python2.7/site-packages/bzt/resources/base-config.yml', '/usr/local/etc/bzt.d/99-installID.yml']
+[2018-04-08 19:15:44,368 DEBUG Engine.Configuration] Reading /usr/local/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
+[2018-04-08 19:15:44,398 DEBUG Engine.Configuration] Reading /usr/local/etc/bzt.d/99-installID.yml as YAML
+[2018-04-08 19:15:44,399 DEBUG Engine] User configs list: ['/Users/sergiomaurenzi/.bzt-rc', 'LT-Easytravel.yml', 'bzm-report-easytravel-demo.yml']
+[2018-04-08 19:15:44,399 DEBUG Engine.Configuration] Configs: ['/Users/sergiomaurenzi/.bzt-rc', 'LT-Easytravel.yml', 'bzm-report-easytravel-demo.yml']
+[2018-04-08 19:15:44,400 DEBUG Engine.Configuration] Reading /Users/sergiomaurenzi/.bzt-rc as YAML
+[2018-04-08 19:15:44,414 DEBUG Engine.Configuration] Reading LT-Easytravel.yml as YAML
+[2018-04-08 19:15:44,432 DEBUG Engine.Configuration] Reading bzm-report-easytravel-demo.yml as YAML
+[2018-04-08 19:15:44,433 DEBUG Engine.Configuration] Configs: ['/Users/sergiomaurenzi/.bzt-rc', 'LT-Easytravel.yml', 'bzm-report-easytravel-demo.yml']
+[2018-04-08 19:15:44,434 DEBUG Engine.Configuration] Reading /Users/sergiomaurenzi/.bzt-rc as YAML
+[2018-04-08 19:15:44,438 DEBUG Engine.Configuration] Reading LT-Easytravel.yml as YAML
+[2018-04-08 19:15:44,453 DEBUG Engine.Configuration] Reading bzm-report-easytravel-demo.yml as YAML
+[2018-04-08 19:15:44,463 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.11.0&installID=a45e60ee260f
+[2018-04-08 19:15:44,469 INFO Engine] Artifacts dir: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050
+[2018-04-08 19:15:44,469 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/effective
+[2018-04-08 19:15:44,472 DEBUG Engine.Configuration] Dumping YAML config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/effective.yml
+[2018-04-08 19:15:44,506 DEBUG Engine.Configuration] Dumping JSON config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/effective.json
+[2018-04-08 19:15:44,510 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/merged.yml
+[2018-04-08 19:15:44,511 DEBUG Engine.Configuration] Dumping YAML config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/merged.yml
+[2018-04-08 19:15:44,524 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/merged.json
+[2018-04-08 19:15:44,525 DEBUG Engine.Configuration] Dumping JSON config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/merged.json
+[2018-04-08 19:15:44,526 DEBUG Engine] Add existing artifact (move=False): LT-Easytravel.yml
+[2018-04-08 19:15:44,526 DEBUG Engine] Copying LT-Easytravel.yml to /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/LT-Easytravel.yml
+[2018-04-08 19:15:44,527 DEBUG Engine] Add existing artifact (move=False): bzm-report-easytravel-demo.yml
+[2018-04-08 19:15:44,527 DEBUG Engine] Copying bzm-report-easytravel-demo.yml to /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/bzm-report-easytravel-demo.yml
+[2018-04-08 19:15:44,528 DEBUG root] Closing log handler: /var/folders/db/22vnvx8j4xz2xw6yvkfbmkr80000gn/T/bzt_dtk4WH.log
+[2018-04-08 19:15:44,528 DEBUG root] Switched writing logs to /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/bzt.log
+[2018-04-08 19:15:44,528 DEBUG root] Linting config
+[2018-04-08 19:15:44,531 WARNING root] at path 'execution': 'execution' should be a list
+[2018-04-08 19:15:44,531 INFO Engine] Preparing...
+[2018-04-08 19:15:44,532 DEBUG Engine] Module config: consolidator defaultdict(None, {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2018-04-08 19:15:44,532 DEBUG root] Importing module: bzt.modules.aggregator
+[2018-04-08 19:15:44,778 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2018-04-08 19:15:44,778 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2018-04-08 19:15:44,779 DEBUG Engine] Module config: monitoring defaultdict(None, {'class': 'bzt.modules.monitoring.Monitoring'})
+[2018-04-08 19:15:44,779 DEBUG root] Importing module: bzt.modules.monitoring
+[2018-04-08 19:15:44,780 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2018-04-08 19:15:44,781 DEBUG Engine] Module config: passfail defaultdict(None, {'class': 'bzt.modules.passfail.PassFailStatus'})
+[2018-04-08 19:15:44,781 DEBUG root] Importing module: bzt.modules.passfail
+[2018-04-08 19:15:44,781 DEBUG root] Loading class: 'PassFailStatus' from <module 'bzt.modules.passfail' from '/usr/local/lib/python2.7/site-packages/bzt/modules/passfail.pyc'>
+[2018-04-08 19:15:44,783 DEBUG root] Importing module: bzt.modules.passfail
+[2018-04-08 19:15:44,783 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/usr/local/lib/python2.7/site-packages/bzt/modules/passfail.pyc'>
+[2018-04-08 19:15:44,783 DEBUG root] Importing module: bzt.modules.passfail
+[2018-04-08 19:15:44,784 DEBUG root] Loading class: 'DataCriterion' from <module 'bzt.modules.passfail' from '/usr/local/lib/python2.7/site-packages/bzt/modules/passfail.pyc'>
+[2018-04-08 19:15:44,784 DEBUG Engine] Module config: local defaultdict(None, {'class': 'bzt.modules.provisioning.Local'})
+[2018-04-08 19:15:44,784 DEBUG root] Importing module: bzt.modules.provisioning
+[2018-04-08 19:15:44,784 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/lib/python2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2018-04-08 19:15:44,784 DEBUG Engine] Module config: jmeter defaultdict(None, {'properties': defaultdict(None, {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'summariser.name': '', 'jmeterengine.force.system.exit': 'true'}), 'class': 'bzt.modules.jmeter.JMeterExecutor', 'plugins': ['jpgc-casutg', 'jpgc-dummy', 'jpgc-ffw', 'jpgc-fifo', 'jpgc-functions', 'jpgc-json', 'jpgc-perfmon', 'jpgc-prmctl', 'jpgc-tst']})
+[2018-04-08 19:15:44,784 DEBUG root] Importing module: bzt.modules.jmeter
+[2018-04-08 19:15:44,834 DEBUG root] Loading class: 'JMeterExecutor' from <module 'bzt.modules.jmeter' from '/usr/local/lib/python2.7/site-packages/bzt/modules/jmeter.pyc'>
+[2018-04-08 19:15:44,835 DEBUG Engine.local] Preparing executor: None/4531705808
+[2018-04-08 19:15:44,837 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/jmeter.log
+[2018-04-08 19:15:44,837 DEBUG Engine.jmeter] Checking if port 4445 is free
+[2018-04-08 19:15:44,838 DEBUG Engine.jmeter] Port 4445 is free
+[2018-04-08 19:15:44,838 DEBUG Engine.jmeter] Using port 4445 for management
+[2018-04-08 19:15:44,838 DEBUG Engine.jmeter.JavaVM] Trying JavaVM: ['java', '-version']
+[2018-04-08 19:15:44,991 DEBUG Engine.jmeter.JavaVM] JavaVM output: java version "1.8.0_91"
+Java(TM) SE Runtime Environment (build 1.8.0_91-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.91-b14, mixed mode)
+[2018-04-08 19:15:44,992 DEBUG Engine.jmeter.TclLibrary] We don't need to check tcl library on this platform
+[2018-04-08 19:15:44,992 DEBUG Engine.jmeter.JMeter] Trying jmeter: /Users/sergiomaurenzi/.bzt/jmeter-taurus/4.0/bin/jmeter.sh
+[2018-04-08 19:15:44,993 DEBUG bzt.utils] Executing shell: ['/Users/sergiomaurenzi/.bzt/jmeter-taurus/4.0/bin/jmeter.sh', '-j', '/var/folders/db/22vnvx8j4xz2xw6yvkfbmkr80000gn/T/jmeterfTB1D0log', '--version'] at .
+[2018-04-08 19:15:45,777 DEBUG Engine] Taurus updates info: {"latest":"1.11.0","needsUpgrade":false}
+[2018-04-08 19:15:45,777 DEBUG Engine] Installation is up-to-date
+[2018-04-08 19:15:46,484 DEBUG Engine.jmeter.JMeter] JMeter check:     _    ____   _    ____ _   _ _____       _ __  __ _____ _____ _____ ____     
+   / \  |  _ \ / \  / ___| | | | ____|     | |  \/  | ____|_   _| ____|  _ \   
+  / _ \ | |_) / _ \| |   | |_| |  _|    _  | | |\/| |  _|   | | |  _| | |_) | 
+ / ___ \|  __/ ___ \ |___|  _  | |___  | |_| | |  | | |___  | | | |___|  _ <  
+/_/   \_\_| /_/   \_\____|_| |_|_____|  \___/|_|  |_|_____| |_| |_____|_| \_\ 4.0 r1823414  
+
+Copyright (c) 1999-2018 The Apache Software Foundation
+
+ / None
+[2018-04-08 19:15:46,485 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/requests.jmx
+[2018-04-08 19:15:46,498 DEBUG JMeterScenarioBuilder] Saving JMX to: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/requests.jmx
+[2018-04-08 19:15:46,500 DEBUG Engine.jmeter] Load: LoadSpec(concurrency=20, throughput=None, ramp_up=60.0, hold=60.0, iterations=0, duration=120.0, steps=None)
+[2018-04-08 19:15:46,507 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/kpi.jtl
+[2018-04-08 19:15:46,507 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/error.jtl
+[2018-04-08 19:15:46,512 DEBUG Engine.jmeter.LoadSettingsProcessor.ThreadGroupHandler] Converting ThreadGroup (LT-Easytravel) to ConcurrencyThreadGroup and apply load parameters
+[2018-04-08 19:15:46,512 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/modified_requests.jmx
+[2018-04-08 19:15:46,512 DEBUG JMX] Saving JMX to: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/modified_requests.jmx
+[2018-04-08 19:15:46,513 DEBUG Engine.jmeter] Additional properties: defaultdict(None, {'jmeter.save.saveservice.autoflush': 'true', 'jmeter.save.saveservice.connect_time': 'true', 'user.classpath': '/Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050:/Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050', 'sampleresult.default.encoding': 'UTF-8', 'summariser.name': '', 'jmeterengine.force.system.exit': 'true', 'jmeter.save.saveservice.timestamp_format': 'ms', 'jmeterengine.nongui.maxport': 4445, 'jmeterengine.nongui.port': 4445})
+[2018-04-08 19:15:46,513 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/jmeter-bzt.properties
+[2018-04-08 19:15:46,513 DEBUG Engine.jmeter] Additional system properties defaultdict(None, {'sun.net.inetaddr.ttl': 0})
+[2018-04-08 19:15:46,514 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/system.properties
+[2018-04-08 19:15:46,514 DEBUG bzt.utils] Executing shell: ['/Users/sergiomaurenzi/.bzt/jmeter-taurus/4.0/bin/PluginsManagerCMD.sh', 'install-for-jmx', '/Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/modified_requests.jmx'] at .
+[2018-04-08 19:15:57,034 DEBUG Engine.jmeter.JMeter] Try to detect plugins for /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/modified_requests.jmx
+19:15:55.907 [main] INFO  org.jmeterplugins.repository.PluginManager - Plugins Status: [jpgc-functions=2.0, jpgc-casutg=2.5, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.6, jpgc-prmctl=0.3, jpgc-perfmon=2.1, jpgc-plugins-manager=0.20, jpgc-tst=2.3, jmeter-core=4.0, jmeter-ftp=4.0, jmeter-http=4.0, jmeter-jdbc=4.0, jmeter-jms=4.0, jmeter-junit=4.0, jmeter-java=4.0, jmeter-ldap=4.0, jmeter-mail=4.0, jmeter-mongodb=4.0, jmeter-native=4.0, jmeter-tcp=4.0, jmeter-components=4.0]
+2018-04-08 19:15:55,907 INFO o.j.r.PluginManager: Plugins Status: [jpgc-functions=2.0, jpgc-casutg=2.5, jpgc-dummy=0.2, jpgc-ffw=2.0, jpgc-fifo=0.2, jpgc-json=2.6, jpgc-prmctl=0.3, jpgc-perfmon=2.1, jpgc-plugins-manager=0.20, jpgc-tst=2.3, jmeter-core=4.0, jmeter-ftp=4.0, jmeter-http=4.0, jmeter-jdbc=4.0, jmeter-jms=4.0, jmeter-junit=4.0, jmeter-java=4.0, jmeter-ldap=4.0, jmeter-mail=4.0, jmeter-mongodb=4.0, jmeter-native=4.0, jmeter-tcp=4.0, jmeter-components=4.0]
+19:15:56.427 [main] INFO  org.apache.jmeter.save.SaveService - Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2018-04-08 19:15:56,427 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+19:15:56.445 [main] INFO  org.apache.jmeter.save.SaveService - Using SaveService properties file encoding UTF-8
+2018-04-08 19:15:56,445 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+19:15:56.451 [main] INFO  org.apache.jmeter.save.SaveService - Using SaveService properties version 4.0
+2018-04-08 19:15:56,451 INFO o.a.j.s.SaveService: Using SaveService properties version 4.0
+19:15:56.498 [main] INFO  org.apache.jmeter.protocol.http.control.CacheManager - Will only cache the following methods: [GET]
+2018-04-08 19:15:56,498 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+19:15:56.502 [main] INFO  org.apache.jmeter.protocol.http.control.CookieManager - Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2018-04-08 19:15:56,502 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+19:15:56.609 [main] INFO  org.jmeterplugins.repository.PluginManager - Restarting JMeter...
+2018-04-08 19:15:56,609 INFO o.j.r.PluginManager: Restarting JMeter...
+
+ERROR StatusLogger No log4j2 configuration file found. Using default configuration: logging only errors to the console. Set system property 'log4j2.debug' to show Log4j2 internal initialization logging.
+
+[2018-04-08 19:16:02,036 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/jmeter.out
+[2018-04-08 19:16:02,037 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/jmeter.err
+[2018-04-08 19:16:02,040 DEBUG Engine] Module config: final-stats defaultdict(None, {'class': 'bzt.modules.reporting.FinalStatus'})
+[2018-04-08 19:16:02,041 DEBUG root] Importing module: bzt.modules.reporting
+[2018-04-08 19:16:02,200 DEBUG easyprocess] version=0.2.3
+[2018-04-08 19:16:02,209 DEBUG pyvirtualdisplay] version=0.2.1
+[2018-04-08 19:16:02,211 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2018-04-08 19:16:02,212 DEBUG Engine] Module config: console defaultdict(None, {'class': 'bzt.modules.console.ConsoleStatusReporter'})
+[2018-04-08 19:16:02,212 DEBUG root] Importing module: bzt.modules.console
+[2018-04-08 19:16:02,212 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/lib/python2.7/site-packages/bzt/modules/console.pyc'>
+[2018-04-08 19:16:02,212 DEBUG Engine] Module config: junit-xml defaultdict(None, {'class': 'bzt.modules.reporting.JUnitXMLReporter'})
+[2018-04-08 19:16:02,212 DEBUG root] Importing module: bzt.modules.reporting
+[2018-04-08 19:16:02,212 DEBUG root] Loading class: 'JUnitXMLReporter' from <module 'bzt.modules.reporting' from '/usr/local/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2018-04-08 19:16:02,212 DEBUG Engine] Module config: blazemeter defaultdict(None, {'token': '********', 'class': 'bzt.modules.blazemeter.BlazeMeterUploader'})
+[2018-04-08 19:16:02,213 DEBUG root] Importing module: bzt.modules.blazemeter
+[2018-04-08 19:16:02,213 DEBUG root] Loading class: 'BlazeMeterUploader' from <module 'bzt.modules.blazemeter' from '/usr/local/lib/python2.7/site-packages/bzt/modules/blazemeter.pyc'>
+[2018-04-08 19:16:02,221 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/web/version None
+[2018-04-08 19:16:02,225 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): a.blazemeter.com
+[2018-04-08 19:16:03,668 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/web/version HTTP/1.1" 200 198
+[2018-04-08 19:16:03,672 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": "packages_backendPackageBuild 10844 release/2018-04-02_92 B10844  Sun Apr 8 17:00:37 2018 +0300 af26941fa9dcd0131574ef71f62d84bf229295a6\n"
+}
+[2018-04-08 19:16:03,672 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/accounts None
+[2018-04-08 19:16:04,074 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/accounts HTTP/1.1" 200 983
+[2018-04-08 19:16:04,075 DEBUG User] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 163653,
+            "name": "Sergio@Performen.com.ar Account",
+            "thumbnailUrl": "",
+         
+[2018-04-08 19:16:04,076 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/workspaces?accountId=163653&enabled=true&limit=100 None
+[2018-04-08 19:16:04,534 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/workspaces?accountId=163653&enabled=true&limit=100 HTTP/1.1" 200 817
+[2018-04-08 19:16:04,535 DEBUG User] Response [200]: {
+    "limit": 100,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 157232,
+            "name": "Default workspace",
+            "userId": 379105,
+            "created": 1
+[2018-04-08 19:16:04,536 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/projects?workspaceId=157232&name=Default None
+[2018-04-08 19:16:04,938 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/projects?workspaceId=157232&name=Default HTTP/1.1" 200 686
+[2018-04-08 19:16:04,939 DEBUG User] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 2,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 270298,
+            "name": "Default",
+            "userId": 379105,
+            "description": null,
+  
+[2018-04-08 19:16:04,940 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/tests?projectId=270298&name=Test-Easytravel.yml None
+[2018-04-08 19:16:05,362 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/tests?projectId=270298&name=Test-Easytravel.yml HTTP/1.1" 200 593
+[2018-04-08 19:16:05,363 DEBUG User] Response [200]: {
+    "limit": 10,
+    "skip": 0,
+    "total": 1,
+    "hidden": 0,
+    "api_version": 4,
+    "error": null,
+    "result": [
+        {
+            "id": 6013956,
+            "name": "Test-Easytravel.yml",
+            "userId": 379105,
+            "created":
+[2018-04-08 19:16:05,367 DEBUG Engine.Configuration] Dumping YAML config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/effective.yml
+[2018-04-08 19:16:05,403 DEBUG Engine.Configuration] Dumping JSON config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/effective.json
+[2018-04-08 19:16:05,406 INFO Engine] Starting...
+[2018-04-08 19:16:05,406 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x10cc74810>
+[2018-04-08 19:16:05,406 DEBUG Engine] Startup <bzt.modules.passfail.PassFailStatus object at 0x10e18a450>
+[2018-04-08 19:16:05,406 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x10cc74c90>
+[2018-04-08 19:16:05,406 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x10cc4aa50>
+[2018-04-08 19:16:05,407 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x10e23c850>
+[2018-04-08 19:16:05,407 INFO Engine.console] Waiting for results...
+[2018-04-08 19:16:05,407 DEBUG Engine] Startup <bzt.modules.reporting.JUnitXMLReporter object at 0x10e352bd0>
+[2018-04-08 19:16:05,407 DEBUG Engine] Startup <bzt.modules.blazemeter.BlazeMeterUploader object at 0x10e582450>
+[2018-04-08 19:16:05,407 INFO Engine.blazemeter] Initiating data feeding...
+[2018-04-08 19:16:05,407 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/tests/6013956/start-external None
+[2018-04-08 19:16:05,757 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/tests/6013956/start-external HTTP/1.1" 202 1618
+[2018-04-08 19:16:05,758 DEBUG User] Response [202]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "session": {
+            "id": "r-ext-5aca94a590472",
+            "name": "Test-Easytravel.yml",
+            "userId": 379105,
+            "offset": 0,
+            "statusCode": 15,
+       
+[2018-04-08 19:16:05,759 DEBUG User] Request: PATCH https://a.blazemeter.com/api/v4/sessions/r-ext-5aca94a590472 {
+ "name": "Easytravel-LoadTest-Demo"
+}
+[2018-04-08 19:16:06,093 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/sessions/r-ext-5aca94a590472 HTTP/1.1" 200 871
+[2018-04-08 19:16:06,094 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": "r-ext-5aca94a590472",
+        "name": "Easytravel-LoadTest-Demo",
+        "userId": 379105,
+        "offset": 0,
+        "statusCode": 15,
+        "status": "INITIALIZING",
+        "
+[2018-04-08 19:16:06,095 INFO Engine.blazemeter] Started data feeding: https://a.blazemeter.com/app/#/masters/17472512
+[2018-04-08 19:16:06,259 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x10cc4a450>
+[2018-04-08 19:16:06,260 DEBUG Engine.local] Delay setup for None/LT-Easytravel: 0(start-at) + 0(delay) = 0
+[2018-04-08 19:16:06,268 DEBUG Engine.Configuration] Dumping YAML config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/effective.yml
+[2018-04-08 19:16:06,327 DEBUG Engine.Configuration] Dumping JSON config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/effective.json
+[2018-04-08 19:16:06,330 DEBUG root] Leveling down log file verbosity, use -v option to have DEBUG messages enabled
+[2018-04-08 19:16:06,330 DEBUG root] Leveled up log file verbosity
+[2018-04-08 19:16:06,330 DEBUG bzt.utils] Executing shell: ['/Users/sergiomaurenzi/.bzt/jmeter-taurus/4.0/bin/jmeter.sh', '-n', '-t', '/Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/modified_requests.jmx', '-j', '/Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/jmeter.log', '-q', '/Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/jmeter-bzt.properties', '-S', '/Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/system.properties'] at /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo
+[2018-04-08 19:16:06,337 DEBUG root] Leveling down log file verbosity, use -v option to have DEBUG messages enabled
+[2018-04-08 19:16:06,602 INFO Engine.console] Waiting for finish...
+[2018-04-08 19:16:22,344 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 19s
+[2018-04-08 19:16:35,374 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 21s
+[2018-04-08 19:16:40,857 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 25s
+[2018-04-08 19:16:50,133 WARNING root] Alert: avg-rt>50ms for 10 sec
+[2018-04-08 19:16:50,241 INFO root] Pass/Fail criterion triggered shutdown: Failed: avg-rt>50ms for 11 sec
+[2018-04-08 19:16:50,264 WARNING Engine] Please wait for graceful shutdown...
+[2018-04-08 19:16:50,269 DEBUG root] Leveled up log file verbosity
+[2018-04-08 19:16:50,269 INFO Engine] Shutting down...
+[2018-04-08 19:16:50,275 DEBUG Engine] Current stop reason: Failed: avg-rt>50ms for 11 sec
+[2018-04-08 19:16:50,275 DEBUG Engine.local] Shutdown None/LT-Easytravel
+[2018-04-08 19:16:51,278 INFO Engine.jmeter] Sending Shutdown command to JMeter on port 4445...
+[2018-04-08 19:16:52,290 DEBUG Engine.jmeter] JMeter stopped on Shutdown command
+[2018-04-08 19:16:52,291 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x10cc43a50>]/{<logging.StreamHandler object at 0x10cc43a50>: <open file '<stdout>', mode 'w' at 0x10b945150>}
+[2018-04-08 19:16:52,296 DEBUG Engine.Configuration] Dumping YAML config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/effective.yml
+[2018-04-08 19:16:52,335 DEBUG Engine.Configuration] Dumping JSON config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/effective.json
+[2018-04-08 19:16:52,338 WARNING root] Automated shutdown
+[2018-04-08 19:16:52,340 DEBUG root] AutomatedShutdown: Failed: avg-rt>50ms for 11 sec
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/bzt/cli.py", line 250, in perform
+    self.engine.run()
+  File "/usr/local/lib/python2.7/site-packages/bzt/engine.py", line 219, in run
+    reraise(exc_info)
+  File "/usr/local/lib/python2.7/site-packages/bzt/engine.py", line 201, in run
+    self._wait()
+  File "/usr/local/lib/python2.7/site-packages/bzt/engine.py", line 240, in _wait
+    while not self._check_modules_list():
+  File "/usr/local/lib/python2.7/site-packages/bzt/engine.py", line 227, in _check_modules_list
+    finished = bool(module.check())
+  File "/usr/local/lib/python2.7/site-packages/bzt/modules/passfail.py", line 96, in check
+    res = res or crit.check()
+  File "/usr/local/lib/python2.7/site-packages/bzt/modules/passfail.py", line 202, in check
+    raise AutomatedShutdown("%s" % self)
+AutomatedShutdown: Failed: avg-rt>50ms for 11 sec
+[2018-04-08 19:16:52,340 INFO Engine] Post-processing...
+[2018-04-08 19:16:52,340 DEBUG Engine.local] Post-process None/LT-Easytravel
+[2018-04-08 19:16:52,340 DEBUG Engine] Add existing artifact (move=True): /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/modified_requests.jmx
+[2018-04-08 19:16:52,340 DEBUG Engine] No need to copy /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/modified_requests.jmx
+[2018-04-08 19:16:52,340 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Opening file: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/error.jtl
+[2018-04-08 19:16:52,341 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Reading: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/error.jtl
+[2018-04-08 19:16:52,343 DEBUG Engine.jmeter.JTLErrorsReader.FileReader] Reading: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/error.jtl
+[2018-04-08 19:16:52,344 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader.FileReader] Reading: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/kpi.jtl
+[2018-04-08 19:16:52,344 DEBUG Engine.jmeter.JTLReader.IncrementalCSVReader] Read: 13 lines / 2352 bytes (at speed 1048576)
+[2018-04-08 19:16:52,344 DEBUG Engine.jmeter.JTLReader] Buffer len: 21
+[2018-04-08 19:16:52,345 INFO Engine.jmeter.JTLReader] Changed data analysis delay to 28s
+[2018-04-08 19:16:52,345 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225784
+[2018-04-08 19:16:52,364 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225785
+[2018-04-08 19:16:52,411 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225786
+[2018-04-08 19:16:52,452 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225789
+[2018-04-08 19:16:52,498 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225790
+[2018-04-08 19:16:52,532 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225791
+[2018-04-08 19:16:52,566 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225792
+[2018-04-08 19:16:52,601 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225793
+[2018-04-08 19:16:52,623 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225794
+[2018-04-08 19:16:52,665 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225795
+[2018-04-08 19:16:52,711 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225797
+[2018-04-08 19:16:52,739 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225798
+[2018-04-08 19:16:52,789 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225799
+[2018-04-08 19:16:52,822 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225800
+[2018-04-08 19:16:52,855 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225801
+[2018-04-08 19:16:52,893 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225802
+[2018-04-08 19:16:52,939 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225803
+[2018-04-08 19:16:52,978 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225804
+[2018-04-08 19:16:53,025 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225808
+[2018-04-08 19:16:53,056 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225809
+[2018-04-08 19:16:53,103 DEBUG Engine.jmeter.JTLReader] Aggregating: 1523225810
+[2018-04-08 19:16:53,139 DEBUG Engine.consolidator] Consolidator buffer[22]: [1523225783, 1523225784, 1523225785, 1523225786, 1523225789, 1523225790, 1523225791, 1523225792, 1523225793, 1523225794, 1523225795, 1523225797, 1523225798, 1523225799, 1523225800, 1523225801, 1523225802, 1523225803, 1523225804, 1523225808, 1523225809, 1523225810]
+[2018-04-08 19:16:53,139 DEBUG Engine.consolidator] Merging into 1523225783
+[2018-04-08 19:16:53,139 DEBUG Engine.consolidator] Merging 1523225783
+[2018-04-08 19:16:53,232 DEBUG root] 1523225783 Failed: avg-rt>50ms for 13 sec: True
+[2018-04-08 19:16:53,233 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/']
+[2018-04-08 19:16:53,235 DEBUG Engine.consolidator] Processed datapoint: 1523225783/None
+[2018-04-08 19:16:53,235 DEBUG Engine.consolidator] Merging into 1523225784
+[2018-04-08 19:16:53,235 DEBUG Engine.consolidator] Merging 1523225784
+[2018-04-08 19:16:53,287 DEBUG root] 1523225784 Failed: avg-rt>50ms for 14 sec: True
+[2018-04-08 19:16:53,287 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php']
+[2018-04-08 19:16:53,289 DEBUG Engine.consolidator] Processed datapoint: 1523225784/None
+[2018-04-08 19:16:53,289 DEBUG Engine.consolidator] Merging into 1523225785
+[2018-04-08 19:16:53,289 DEBUG Engine.consolidator] Merging 1523225785
+[2018-04-08 19:16:53,388 DEBUG root] 1523225785 Failed: avg-rt>50ms for 15 sec: True
+[2018-04-08 19:16:53,388 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/']
+[2018-04-08 19:16:53,390 DEBUG Engine.consolidator] Processed datapoint: 1523225785/None
+[2018-04-08 19:16:53,390 DEBUG Engine.consolidator] Merging into 1523225786
+[2018-04-08 19:16:53,390 DEBUG Engine.consolidator] Merging 1523225786
+[2018-04-08 19:16:53,487 DEBUG root] 1523225786 Failed: avg-rt>50ms for 16 sec: True
+[2018-04-08 19:16:53,487 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/']
+[2018-04-08 19:16:53,489 DEBUG Engine.consolidator] Processed datapoint: 1523225786/None
+[2018-04-08 19:16:53,489 DEBUG Engine.consolidator] Merging into 1523225789
+[2018-04-08 19:16:53,489 DEBUG Engine.consolidator] Merging 1523225789
+[2018-04-08 19:16:53,600 DEBUG root] 1523225789 Failed: avg-rt>50ms for 19 sec: True
+[2018-04-08 19:16:53,600 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/']
+[2018-04-08 19:16:53,602 DEBUG Engine.consolidator] Processed datapoint: 1523225789/None
+[2018-04-08 19:16:53,602 DEBUG Engine.consolidator] Merging into 1523225790
+[2018-04-08 19:16:53,602 DEBUG Engine.consolidator] Merging 1523225790
+[2018-04-08 19:16:53,685 DEBUG root] 1523225790 Failed: avg-rt>50ms for 20 sec: True
+[2018-04-08 19:16:53,686 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations']
+[2018-04-08 19:16:53,687 DEBUG Engine.consolidator] Processed datapoint: 1523225790/None
+[2018-04-08 19:16:53,687 DEBUG Engine.consolidator] Merging into 1523225791
+[2018-04-08 19:16:53,688 DEBUG Engine.consolidator] Merging 1523225791
+[2018-04-08 19:16:53,771 DEBUG root] 1523225791 Failed: avg-rt>50ms for 21 sec: True
+[2018-04-08 19:16:53,772 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/']
+[2018-04-08 19:16:53,774 DEBUG Engine.consolidator] Processed datapoint: 1523225791/None
+[2018-04-08 19:16:53,774 DEBUG Engine.consolidator] Merging into 1523225792
+[2018-04-08 19:16:53,774 DEBUG Engine.consolidator] Merging 1523225792
+[2018-04-08 19:16:53,854 DEBUG root] 1523225792 Failed: avg-rt>50ms for 22 sec: True
+[2018-04-08 19:16:53,854 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/']
+[2018-04-08 19:16:53,856 DEBUG Engine.consolidator] Processed datapoint: 1523225792/None
+[2018-04-08 19:16:53,856 DEBUG Engine.consolidator] Merging into 1523225793
+[2018-04-08 19:16:53,856 DEBUG Engine.consolidator] Merging 1523225793
+[2018-04-08 19:16:53,920 DEBUG root] 1523225793 Failed: avg-rt>50ms for 23 sec: True
+[2018-04-08 19:16:53,920 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php']
+[2018-04-08 19:16:53,922 DEBUG Engine.consolidator] Processed datapoint: 1523225793/None
+[2018-04-08 19:16:53,922 DEBUG Engine.consolidator] Merging into 1523225794
+[2018-04-08 19:16:53,922 DEBUG Engine.consolidator] Merging 1523225794
+[2018-04-08 19:16:54,022 DEBUG root] 1523225794 Failed: avg-rt>50ms for 24 sec: True
+[2018-04-08 19:16:54,022 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/italy/', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations']
+[2018-04-08 19:16:54,024 DEBUG Engine.consolidator] Processed datapoint: 1523225794/None
+[2018-04-08 19:16:54,024 DEBUG Engine.consolidator] Merging into 1523225795
+[2018-04-08 19:16:54,024 DEBUG Engine.consolidator] Merging 1523225795
+[2018-04-08 19:16:54,129 DEBUG root] 1523225795 Failed: avg-rt>50ms for 25 sec: True
+[2018-04-08 19:16:54,129 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/']
+[2018-04-08 19:16:54,131 DEBUG Engine.consolidator] Processed datapoint: 1523225795/None
+[2018-04-08 19:16:54,131 DEBUG Engine.consolidator] Merging into 1523225797
+[2018-04-08 19:16:54,131 DEBUG Engine.consolidator] Merging 1523225797
+[2018-04-08 19:16:54,208 DEBUG root] 1523225797 Failed: avg-rt>50ms for 27 sec: True
+[2018-04-08 19:16:54,208 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php']
+[2018-04-08 19:16:54,210 DEBUG Engine.consolidator] Processed datapoint: 1523225797/None
+[2018-04-08 19:16:54,210 DEBUG Engine.consolidator] Merging into 1523225798
+[2018-04-08 19:16:54,210 DEBUG Engine.consolidator] Merging 1523225798
+[2018-04-08 19:16:54,325 DEBUG root] 1523225798 Failed: avg-rt>50ms for 28 sec: True
+[2018-04-08 19:16:54,325 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/']
+[2018-04-08 19:16:54,327 DEBUG Engine.consolidator] Processed datapoint: 1523225798/None
+[2018-04-08 19:16:54,327 DEBUG Engine.consolidator] Merging into 1523225799
+[2018-04-08 19:16:54,327 DEBUG Engine.consolidator] Merging 1523225799
+[2018-04-08 19:16:54,415 DEBUG root] 1523225799 Failed: avg-rt>50ms for 29 sec: True
+[2018-04-08 19:16:54,415 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations']
+[2018-04-08 19:16:54,417 DEBUG Engine.consolidator] Processed datapoint: 1523225799/None
+[2018-04-08 19:16:54,417 DEBUG Engine.consolidator] Merging into 1523225800
+[2018-04-08 19:16:54,417 DEBUG Engine.consolidator] Merging 1523225800
+[2018-04-08 19:16:54,506 DEBUG root] 1523225800 Failed: avg-rt>50ms for 30 sec: True
+[2018-04-08 19:16:54,506 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/italy/']
+[2018-04-08 19:16:54,508 DEBUG Engine.consolidator] Processed datapoint: 1523225800/None
+[2018-04-08 19:16:54,509 DEBUG Engine.consolidator] Merging into 1523225801
+[2018-04-08 19:16:54,509 DEBUG Engine.consolidator] Merging 1523225801
+[2018-04-08 19:16:54,603 DEBUG root] 1523225801 Failed: avg-rt>50ms for 31 sec: True
+[2018-04-08 19:16:54,603 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/']
+[2018-04-08 19:16:54,605 DEBUG Engine.consolidator] Processed datapoint: 1523225801/None
+[2018-04-08 19:16:54,605 DEBUG Engine.consolidator] Merging into 1523225802
+[2018-04-08 19:16:54,605 DEBUG Engine.consolidator] Merging 1523225802
+[2018-04-08 19:16:54,715 DEBUG root] 1523225802 Failed: avg-rt>50ms for 32 sec: True
+[2018-04-08 19:16:54,715 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations']
+[2018-04-08 19:16:54,717 DEBUG Engine.consolidator] Processed datapoint: 1523225802/None
+[2018-04-08 19:16:54,717 DEBUG Engine.consolidator] Merging into 1523225803
+[2018-04-08 19:16:54,717 DEBUG Engine.consolidator] Merging 1523225803
+[2018-04-08 19:16:54,816 DEBUG root] 1523225803 Failed: avg-rt>50ms for 33 sec: True
+[2018-04-08 19:16:54,816 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/']
+[2018-04-08 19:16:54,818 DEBUG Engine.consolidator] Processed datapoint: 1523225803/None
+[2018-04-08 19:16:54,818 DEBUG Engine.consolidator] Merging into 1523225804
+[2018-04-08 19:16:54,818 DEBUG Engine.consolidator] Merging 1523225804
+[2018-04-08 19:16:54,930 DEBUG root] 1523225804 Failed: avg-rt>50ms for 34 sec: True
+[2018-04-08 19:16:54,930 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/italy/']
+[2018-04-08 19:16:54,932 DEBUG Engine.consolidator] Processed datapoint: 1523225804/None
+[2018-04-08 19:16:54,932 DEBUG Engine.consolidator] Merging into 1523225808
+[2018-04-08 19:16:54,932 DEBUG Engine.consolidator] Merging 1523225808
+[2018-04-08 19:16:55,021 DEBUG root] 1523225808 Failed: avg-rt>50ms for 38 sec: True
+[2018-04-08 19:16:55,021 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php']
+[2018-04-08 19:16:55,023 DEBUG Engine.consolidator] Processed datapoint: 1523225808/None
+[2018-04-08 19:16:55,024 DEBUG Engine.consolidator] Merging into 1523225809
+[2018-04-08 19:16:55,024 DEBUG Engine.consolidator] Merging 1523225809
+[2018-04-08 19:16:55,119 DEBUG root] 1523225809 Failed: avg-rt>50ms for 39 sec: True
+[2018-04-08 19:16:55,119 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/amp/italy/']
+[2018-04-08 19:16:55,121 DEBUG Engine.consolidator] Processed datapoint: 1523225809/None
+[2018-04-08 19:16:55,121 DEBUG Engine.consolidator] Merging into 1523225810
+[2018-04-08 19:16:55,121 DEBUG Engine.consolidator] Merging 1523225810
+[2018-04-08 19:16:55,213 DEBUG root] 1523225810 Failed: avg-rt>50ms for 40 sec: True
+[2018-04-08 19:16:55,213 DEBUG root] No label reserve  in ['', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/', u'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/CalculateRecommendations']
+[2018-04-08 19:16:55,215 DEBUG Engine.consolidator] Processed datapoint: 1523225810/None
+[2018-04-08 19:16:55,215 INFO Engine.final-stats] Test duration: 0:00:47
+[2018-04-08 19:16:55,216 INFO Engine.final-stats] Samples count: 45, 8.89% failures
+[2018-04-08 19:16:55,216 INFO Engine.final-stats] Average times: total 3.940, latency 1.008, connect 0.000
+[2018-04-08 19:16:55,216 INFO Engine.final-stats] Percentile 0.0%: 0.228
+[2018-04-08 19:16:55,216 INFO Engine.final-stats] Percentile 50.0%: 2.067
+[2018-04-08 19:16:55,216 INFO Engine.final-stats] Percentile 90.0%: 12.311
+[2018-04-08 19:16:55,216 INFO Engine.final-stats] Percentile 95.0%: 14.223
+[2018-04-08 19:16:55,217 INFO Engine.final-stats] Percentile 99.0%: 18.959
+[2018-04-08 19:16:55,217 INFO Engine.final-stats] Percentile 99.9%: 18.959
+[2018-04-08 19:16:55,217 INFO Engine.final-stats] Percentile 100.0%: 18.959
+[2018-04-08 19:16:55,217 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2018-04-08 19:16:55,217 DEBUG Engine.junit-xml] Processing passfail objects: [<bzt.modules.passfail.PassFailStatus object at 0x10e18a450>]
+[2018-04-08 19:16:55,220 DEBUG Engine] post_process: Cannot create file /var/lib/jenkins/workspace/Taurus-Jenkins-ServiceNow-Demo/junit-report.xml
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/bzt/engine.py", line 287, in post_process
+    module.post_process()
+  File "/usr/local/lib/python2.7/site-packages/bzt/modules/reporting.py", line 337, in post_process
+    writer.save_report(filename)
+  File "/usr/local/lib/python2.7/site-packages/bzt/modules/reporting.py", line 505, in save_report
+    raise TaurusInternalException("Cannot create file %s" % fname)
+TaurusInternalException: Cannot create file /var/lib/jenkins/workspace/Taurus-Jenkins-ServiceNow-Demo/junit-report.xml
+
+[2018-04-08 19:16:55,220 DEBUG Engine.blazemeter] KPI bulk buffer len in post-proc: 26
+[2018-04-08 19:16:55,220 INFO Engine.blazemeter] Sending remaining KPI data to server...
+[2018-04-08 19:16:55,230 DEBUG User] Request: POST https://data.blazemeter.com/submit.php?session_id=r-ext-5aca94a590472&signature=149ddc4daaa6237afad9c6bb41187ba9&test_id=6013956&user_id=379105&pq=0&target=labels_bulk&update=1 {
+ "sourceID": 4535624784, 
+ "labels": [
+  {
+   "percentileHistogramBytes": [], 
+   "errors": [], 
+   "name": "ALL", 
+   "interval": 1, 
+   "otherErrorsCount": 0, 
+   "n": 45, 
+   "percentileHistogramLatency": [], 
+   "intervals": [
+    {
+     "by": {
+    
+[2018-04-08 19:16:55,939 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /submit.php?session_id=r-ext-5aca94a590472&signature=149ddc4daaa6237afad9c6bb41187ba9&test_id=6013956&user_id=379105&pq=0&target=labels_bulk&update=1 HTTP/1.1" 200 156
+[2018-04-08 19:16:55,940 DEBUG User] Response [200]: {"api_version":2,"error":null,"result":{"session":{"_id":"r-ext-5aca94a590472","name":"Easytravel-LoadTest-Demo","statusCode":100,"status":"INITIALIZING"}}}
+[2018-04-08 19:16:55,952 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext-5aca94a590472/files?signature=149ddc4daaa6237afad9c6bb41187ba9 --===============5875464199741940800==
+Content-Disposition: file; name="file"; filename="r-ext-5aca94a590472-0-c.monitoring.json"
+Content-Type: application/json
+
+{
+ "kpis": {
+  "Connections": "Connections", 
+  "CPU": "CPU", 
+  "Network I/O": "Network I
+[2018-04-08 19:16:56,794 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext-5aca94a590472/files?signature=149ddc4daaa6237afad9c6bb41187ba9 HTTP/1.1" 200 116
+[2018-04-08 19:16:56,795 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "r-ext-5aca94a590472-0-c.monitoring.json"
+    ]
+}
+[2018-04-08 19:16:56,862 INFO Engine.blazemeter] Uploading all artifacts as artifacts.zip ...
+[2018-04-08 19:16:56,863 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext-5aca94a590472/files?signature=149ddc4daaa6237afad9c6bb41187ba9 --===============5540467327404731044==
+Content-Disposition: file; name="file"; filename="artifacts.zip"
+Content-Type: application/zip
+
+PK    ö™ˆLvÓßŠL  V     merged.jsoníWmOÛ0þÞ_aå#«›¤ÐQ@ MÀÞÄÆECšr“kã’ØžíôÄŸí¤M
+M£¢šèlßùžç‰ÏwÓ@žŠ€I¹ò¶ÑM
+[2018-04-08 19:16:57,593 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext-5aca94a590472/files?signature=149ddc4daaa6237afad9c6bb41187ba9 HTTP/1.1" 200 90
+[2018-04-08 19:16:57,594 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "artifacts.zip"
+    ]
+}
+[2018-04-08 19:16:57,594 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext-5aca94a590472/files?signature=149ddc4daaa6237afad9c6bb41187ba9 --===============4490330750685424110==
+Content-Disposition: file; name="file"; filename="artifacts.zip.tail.bz"
+Content-Type: application/x-bzip
+
+3K LT-Easytravel.yml
+307  bzm-report-easytravel-demo.yml
+44K bzt.log
+9K effective.json
+7K effective.yml
+83
+[2018-04-08 19:16:58,160 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext-5aca94a590472/files?signature=149ddc4daaa6237afad9c6bb41187ba9 HTTP/1.1" 200 98
+[2018-04-08 19:16:58,162 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "artifacts.zip.tail.bz"
+    ]
+}
+[2018-04-08 19:16:58,162 INFO Engine.blazemeter] Uploading /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/bzt.log
+[2018-04-08 19:16:58,165 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext-5aca94a590472/files?signature=149ddc4daaa6237afad9c6bb41187ba9 --===============7279273776324226814==
+Content-Disposition: file; name="file"; filename="bzt.log"
+Content-Type: text/plain
+
+[2018-04-08 19:15:44,367 INFO root] Taurus CLI Tool v1.11.0
+[2018-04-08 19:15:44,367 DEBUG root] Command-line options: {'verbose
+[2018-04-08 19:16:59,102 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext-5aca94a590472/files?signature=149ddc4daaa6237afad9c6bb41187ba9 HTTP/1.1" 200 84
+[2018-04-08 19:16:59,103 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "bzt.log"
+    ]
+}
+[2018-04-08 19:16:59,103 DEBUG User] Request: POST https://data.blazemeter.com/api/v4/image/r-ext-5aca94a590472/files?signature=149ddc4daaa6237afad9c6bb41187ba9 --===============8357496599030257456==
+Content-Disposition: file; name="file"; filename="bzt.log.tail.bz"
+Content-Type: application/x-bzip
+
+ "sourceID": 4535624784, 
+ "labels": [
+  {
+   "percentileHistogramBytes": [], 
+   "errors": [], 
+   "name": "ALL
+[2018-04-08 19:16:59,800 DEBUG urllib3.connectionpool] https://data.blazemeter.com:443 "POST /api/v4/image/r-ext-5aca94a590472/files?signature=149ddc4daaa6237afad9c6bb41187ba9 HTTP/1.1" 200 92
+[2018-04-08 19:16:59,801 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": [
+        "bzt.log.tail.bz"
+    ]
+}
+[2018-04-08 19:16:59,801 DEBUG Engine.blazemeter] Set last check time to: 1523225762.21
+[2018-04-08 19:16:59,801 INFO Engine.blazemeter] Ending data feeding...
+[2018-04-08 19:16:59,801 DEBUG User] Request: POST https://a.blazemeter.com/api/v4/sessions/r-ext-5aca94a590472/stop None
+[2018-04-08 19:17:00,311 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "POST /api/v4/sessions/r-ext-5aca94a590472/stop HTTP/1.1" 202 63
+[2018-04-08 19:17:00,312 DEBUG User] Response [202]: {
+    "api_version": 4,
+    "error": null,
+    "result": true
+}
+[2018-04-08 19:17:00,312 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/sessions/r-ext-5aca94a590472 None
+[2018-04-08 19:17:00,825 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/sessions/r-ext-5aca94a590472 HTTP/1.1" 200 2804
+[2018-04-08 19:17:00,826 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": "r-ext-5aca94a590472",
+        "name": "Easytravel-LoadTest-Demo",
+        "userId": 379105,
+        "offset": 0,
+        "statusCode": 140,
+        "status": "ENDED",
+        "ended"
+[2018-04-08 19:17:00,826 DEBUG User] Request: PATCH https://a.blazemeter.com/api/v4/sessions/r-ext-5aca94a590472 {
+ "note": "AutomatedShutdown: Failed: avg-rt>50ms for 11 sec"
+}
+[2018-04-08 19:17:01,177 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/sessions/r-ext-5aca94a590472 HTTP/1.1" 200 2622
+[2018-04-08 19:17:01,178 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": "r-ext-5aca94a590472",
+        "name": "Easytravel-LoadTest-Demo",
+        "userId": 379105,
+        "offset": 0,
+        "statusCode": 140,
+        "status": "ENDED",
+        "ended"
+[2018-04-08 19:17:01,178 DEBUG User] Request: GET https://a.blazemeter.com/api/v4/masters/17472512 None
+[2018-04-08 19:17:01,527 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "GET /api/v4/masters/17472512 HTTP/1.1" 200 2205
+[2018-04-08 19:17:01,528 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 17472512,
+        "name": "Easytravel-LoadTest-Demo",
+        "userId": 379105,
+        "ended": 1523225820,
+        "maxUsers": 14,
+        "created": 1523225765,
+        "updated": 
+[2018-04-08 19:17:01,529 DEBUG User] Request: PATCH https://a.blazemeter.com/api/v4/masters/17472512 {
+ "note": "AutomatedShutdown: Failed: avg-rt>50ms for 11 sec"
+}
+[2018-04-08 19:17:01,875 DEBUG urllib3.connectionpool] https://a.blazemeter.com:443 "PATCH /api/v4/masters/17472512 HTTP/1.1" 200 453
+[2018-04-08 19:17:01,876 DEBUG User] Response [200]: {
+    "api_version": 4,
+    "error": null,
+    "result": {
+        "id": 17472512,
+        "name": "Easytravel-LoadTest-Demo",
+        "userId": 379105,
+        "ended": 1523225820,
+        "maxUsers": 14,
+        "isSandbox": false,
+        "executorClien
+[2018-04-08 19:17:01,876 INFO Engine.blazemeter] Online report link: https://a.blazemeter.com/app/#/masters/17472512
+[2018-04-08 19:17:01,880 DEBUG Engine.Configuration] Dumping YAML config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/effective.yml
+[2018-04-08 19:17:01,918 DEBUG Engine.Configuration] Dumping JSON config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/effective.json
+[2018-04-08 19:17:01,921 DEBUG root] Internal Error: Cannot create file /var/lib/jenkins/workspace/Taurus-Jenkins-ServiceNow-Demo/junit-report.xml
+[2018-04-08 19:17:01,921 DEBUG root] TaurusInternalException: Cannot create file /var/lib/jenkins/workspace/Taurus-Jenkins-ServiceNow-Demo/junit-report.xml
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/bzt/cli.py", line 257, in perform
+    self.engine.post_process()
+  File "/usr/local/lib/python2.7/site-packages/bzt/engine.py", line 300, in post_process
+    reraise(exc_info)
+  File "/usr/local/lib/python2.7/site-packages/bzt/engine.py", line 287, in post_process
+    module.post_process()
+  File "/usr/local/lib/python2.7/site-packages/bzt/modules/reporting.py", line 337, in post_process
+    writer.save_report(filename)
+  File "/usr/local/lib/python2.7/site-packages/bzt/modules/reporting.py", line 505, in save_report
+    raise TaurusInternalException("Cannot create file %s" % fname)
+TaurusInternalException: Cannot create file /var/lib/jenkins/workspace/Taurus-Jenkins-ServiceNow-Demo/junit-report.xml
+[2018-04-08 19:17:01,921 INFO root] Artifacts dir: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050
+[2018-04-08 19:17:01,921 WARNING root] Done performing with code: 3
+[2018-04-08 19:17:01,922 DEBUG root] Closing log handler: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-ServiceNow-demo/2018-04-08_19-15-44.464050/bzt.log

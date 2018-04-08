@@ -1,0 +1,84 @@
+---
+execution:
+  concurrency: 20
+  hold-for: 1m
+  ramp-up: 1m
+  scenario: LT-Easytravel
+modules:
+  blazemeter:
+    token: '********'
+reporting:
+- data-source: pass-fail
+  filename: /var/lib/jenkins/workspace/Taurus-Jenkins-ServiceNow-Demo/junit-report.xml
+  module: junit-xml
+- module: blazemeter
+  project: Default
+  report-name: Easytravel-LoadTest-Demo
+  test: Test-Easytravel.yml
+scenarios:
+  LT-Easytravel:
+    headers: null
+    requests:
+    - headers:
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+        Upgrade-Insecure-Requests: '1'
+      label: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/
+      method: GET
+      think-time: 0ms
+      url: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/
+    - body:
+        info: '1'
+        journey_id: '11'
+      headers:
+        Accept: application/json, text/javascript, */*; q=0.01
+        Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+        Origin: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079
+        Referer: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/
+        X-Requested-With: XMLHttpRequest
+      label: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/rating/ratings.php
+      method: POST
+      url: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/rating/ratings.php
+    - body:
+        info: '1'
+        journey_id: '11'
+      headers:
+        Accept: application/json, text/javascript, */*; q=0.01
+        Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+        Origin: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079
+        Referer: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/
+        X-Requested-With: XMLHttpRequest
+      label: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/rating/ratings.php
+      method: POST
+      url: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/rating/ratings.php
+    - body:
+        _: '1523225235535'
+      headers:
+        Accept: text/html, */*; q=0.01
+        Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+        Referer: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/
+        X-Requested-With: XMLHttpRequest
+      label: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/CalculateRecommendations
+      method: GET
+      url: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/CalculateRecommendations
+    - headers:
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+        Referer: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/
+        Upgrade-Insecure-Requests: '1'
+      label: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/amp/
+      method: GET
+      think-time: 1608ms
+      url: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/amp/
+    - headers:
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+        Referer: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/amp/
+        Upgrade-Insecure-Requests: '1'
+      label: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/amp/italy/
+      method: GET
+      think-time: 4395ms
+      url: http://ec2-54-210-22-3.compute-1.amazonaws.com:8079/amp/italy/
+services:
+- criteria:
+  - avg-rt>50ms for 10s, stop as failed
+  - hits of reserve >100 for 10s, continue as failed
+  module: passfail
+
