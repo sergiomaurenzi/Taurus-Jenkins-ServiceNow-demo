@@ -1,0 +1,94 @@
+---
+execution:
+- concurrency: 20
+  ramp-up: 1m
+  hold-for: 1m
+  scenario: LoadTest-Easytravel
+scenarios:
+  LoadTest-Easytravel:
+    requests:
+      - url: 'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/special-offers.jsp'
+        method: GET
+        label: 'special-offers.jsp'
+        think-time: 0ms
+      - url: 'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/orange-booking-review.jsf'
+        method: GET
+        label: 'orange-booking-review.jsf'
+        think-time: 3000ms
+        body:
+          journeyId: '5216'
+      - url: 'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php'
+        method: POST
+        label: 'ratings.php'
+        body:
+          info: '1'
+          journey_id: '5216'
+      - url: 'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/rating/ratings.php'
+        method: POST
+        label: 'ratings.php'
+        body:
+          info: '1'
+          journey_id: '5216'
+      - url: 'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/orange-booking-payment.jsf'
+        method: GET
+        label: 'orange-booking-payment.jsf'
+        think-time: 3000ms
+        body:
+          journeyId: '5216'
+      - url: 'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/orange-booking-payment.jsf'
+        method: POST
+        label: 'orange-booking-payment.jsf'
+        headers:
+          Faces-Request: partial/ajax
+          Origin: 'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079'
+          Content-type: application/x-www-form-urlencoded
+          Accept: '*/*'
+          Referer: 'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/orange-booking-payment.jsf?journeyId=5216'
+        body:
+          ice.event.alt: 'false'
+          ice.event.captured: 'iceform:bookPaymentNext'
+          ice.event.ctrl: 'false'
+          ice.event.left: 'true'
+          ice.event.meta: 'false'
+          ice.event.right: 'false'
+          ice.event.shift: 'false'
+          ice.event.target: 'iceform:bookPaymentNext'
+          ice.event.type: onclick
+          ice.event.x: '632'
+          ice.event.y: '484'
+          ice.focus: 'iceform:bookPaymentNext'
+          ice.submit.serialization: form
+          ice.submit.type: ice.s
+          ice.view: 'vamurin1r4wj,vamurin1r4wj'
+          ice.window: 'pxjfra9l8p,pxjfra9l8p'
+          icefacesCssUpdates: ''
+          iceform: iceform
+          'iceform:bookPaymentNext': Next
+          'iceform:creditCardNumber': '1234567890'
+          'iceform:creditCardOwner': leo messi
+          'iceform:creditCardType': VISA
+          'iceform:expirationMonth': May
+          'iceform:expirationYear': '2020'
+          'iceform:j_idcl': ''
+          'iceform:verificationNumber': '123'
+          javax.faces.ViewState: '-7536169025164845951:-3658721971364009107'
+          javax.faces.partial.ajax: 'true'
+          javax.faces.partial.event: click
+          javax.faces.partial.execute: '@all'
+          javax.faces.partial.render: '@all'
+          javax.faces.source: 'iceform:bookPaymentNext'
+      - url: 'http://ec2-54-84-118-207.compute-1.amazonaws.com:8079/orange-booking-finish.jsf'
+        method: GET
+        label: 'orange-booking-finish.jsf'
+        think-time: 1756ms
+        body:
+          journeyId: '5216'
+services:
+- module: passfail
+  criteria:
+  - avg-rt>2000ms for 10s, continue as failed
+  - hits of reserve >100 for 10s, continue as failed
+reporting:
+- module: junit-xml
+  filename: junit-report.xml
+  data-source: pass-fail
