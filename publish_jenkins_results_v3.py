@@ -118,7 +118,7 @@ def publish_results():
         d['error_stack_trace'] = i[1].errorStackTrace
         
         print ">>>>>>>>>>>>>test_case=%s" % i[1].className
-        d['test_case'] = i[1].className + git_tag
+        d['test_case'] = i[1].className
         
         output['results'].append(d)
         count += 1
