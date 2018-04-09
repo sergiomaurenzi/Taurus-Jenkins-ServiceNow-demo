@@ -34,7 +34,7 @@ scenarios:
 services:
 - module: passfail
   criteria:
-  - avg-rt>50ms for 10s, stop as failed
+  - avg-rt>50ms for 10s, continue as failed
   - hits of easytravel-frontend >100 for 10s, continue as failed
 reporting:
 - module: junit-xml
