@@ -57,7 +57,8 @@ def publish_results():
     else:
         durationSeconds = duration
 
-    
+    D1,D2=durationSeconds.split(".")
+
 
     url = build.baseurl
     
@@ -66,7 +67,7 @@ def publish_results():
     print ">>>>>console_length=%s" % len(console)
     print ">>>>>revision=%s" % revision
     print ">>>>>duration=%s" % duration
-    print ">>>>>durationSeconds=%s" % durationSeconds
+    print ">>>>>durationSeconds=%s" % D1
     print ">>>>>gitTag=%s" % git_tag
     
     output['job'] = args.job
@@ -74,7 +75,7 @@ def publish_results():
     output['status'] = status
     output['console'] = console
     output['revision'] = revision
-    output['duration'] = durationSeconds
+    output['duration'] = D1
     output['url'] = url
     
     print ">>>>>url=%s" % url
@@ -90,12 +91,11 @@ def publish_results():
     print ">>>>>passCount=%s" % resultset._data['passCount']  
     print ">>>>>failCount=%s" % resultset._data['failCount']
     print ">>>>>skipCount=%s" % resultset._data['skipCount']
-    print ">>>>>test_suite=%s" % resultset._data['name']
     
     output['pass_count'] = resultset._data['passCount']
     output['fail_count'] = resultset._data['failCount']
     output['skip_count'] = resultset._data['skipCount']
-    output['test_suite'] = resultset._data['name']
+    
     
     if not build.has_resultset():
         quit()
