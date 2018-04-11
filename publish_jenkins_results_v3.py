@@ -90,10 +90,12 @@ def publish_results():
     print ">>>>>passCount=%s" % resultset._data['passCount']  
     print ">>>>>failCount=%s" % resultset._data['failCount']
     print ">>>>>skipCount=%s" % resultset._data['skipCount']
+    print ">>>>>test_suite=%s" % resultset._data['name']
     
     output['pass_count'] = resultset._data['passCount']
     output['fail_count'] = resultset._data['failCount']
     output['skip_count'] = resultset._data['skipCount']
+    output['test_suite'] = resultset._data['name']
     
     if not build.has_resultset():
         quit()
