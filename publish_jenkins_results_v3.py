@@ -21,7 +21,7 @@ import pytz
 parser = argparse.ArgumentParser()
 parser.add_argument("job")
 parser.add_argument("build")
-parser.add_argument("git_tag_name")
+parser.add_argument("git_tag_message")
 parser.add_argument("jenkins_url")
 parser.add_argument("jenkins_user")
 parser.add_argument("jenkins_pass")
@@ -49,7 +49,7 @@ def publish_results():
     console = build.get_console()
     revision = build.get_revision()
     duration = str(build.get_duration()) # Need to cook this
-    git_tag = args.git_tag_name
+    git_tag = args.git_tag_message
     
     if build.is_running():
         durationSeconds = str((datetime.datetime.now(pytz.utc) - build.get_timestamp()).total_seconds())
@@ -118,7 +118,8 @@ def publish_results():
         d['error_stack_trace'] = i[1].errorStackTrace
         
         print ">>>>>>>>>>>>>test_case=%s" % i[1].className
-        d['test_case'] = i[1].className
+        #d['test_case'] = i[1].className
+        d['test_case'] = git_tag_message
         
         output['results'].append(d)
         count += 1
