@@ -119,7 +119,7 @@ def publish_results():
         
         print ">>>>>>>>>>>>>test_case=%s" % i[1].className
         #d['test_case'] = i[1].className
-        d['test_case'] = git_tag_message
+        d['test_case'] = git_tag
         
         output['results'].append(d)
         count += 1
