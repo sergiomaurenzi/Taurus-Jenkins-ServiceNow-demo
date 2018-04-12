@@ -49,7 +49,7 @@ def publish_results():
     console = build.get_console()
     revision = build.get_revision()
     git_tag = args.git_tag_message
-    s = datetime.datetime.now(pytz.utc) - build.get_timestamp().total_seconds()
+    s = (datetime.datetime.utcnow() - build.get_timestamp()).total_seconds()
     
     if build.is_running():
         duration = datetime.timedelta(seconds=s)
