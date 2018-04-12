@@ -70,7 +70,7 @@ def publish_results():
     output['status'] = status
     output['console'] = console
     output['revision'] = revision
-    output['duration'] = D1
+    output['duration'] = duration
     output['url'] = url
     
     print ">>>>>url=%s" % url
