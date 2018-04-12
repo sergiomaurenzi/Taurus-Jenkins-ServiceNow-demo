@@ -52,7 +52,7 @@ def publish_results():
     s = (datetime.datetime.now(pytz.utc) - build.get_timestamp()).total_seconds()
     
     if build.is_running():
-        duration = datetime.timedelta(seconds=s)
+        duration = str(datetime.timedelta(seconds=s))
     else: # If the job is completed
         duration = str(build.get_duration())
 
