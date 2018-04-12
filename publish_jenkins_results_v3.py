@@ -48,16 +48,12 @@ def publish_results():
     status = build.get_status()
     console = build.get_console()
     revision = build.get_revision()
-    duration = str(build.get_duration()) # Need to cook this
     git_tag = args.git_tag_message
     
     if build.is_running():
-        durationSeconds = str((datetime.datetime.now(pytz.utc) - build.get_timestamp()).total_seconds())
-    # If the job is completed
-    else:
-        durationSeconds = duration
-
-    D1,D2=durationSeconds.split(".")
+        duration = str(datetime.timedelta((datetime.datetime.now(pytz.utc) - build.get_timestamp()).total_seconds()))
+    else: # If the job is completed
+        duration = str(build.get_duration())
 
 
     url = build.baseurl
@@ -67,7 +63,6 @@ def publish_results():
     print ">>>>>console_length=%s" % len(console)
     print ">>>>>revision=%s" % revision
     print ">>>>>duration=%s" % duration
-    print ">>>>>durationSeconds=%s" % D1
     print ">>>>>gitTag=%s" % git_tag
     
     output['job'] = args.job
