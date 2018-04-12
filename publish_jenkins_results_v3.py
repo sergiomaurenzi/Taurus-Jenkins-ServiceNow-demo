@@ -49,9 +49,10 @@ def publish_results():
     console = build.get_console()
     revision = build.get_revision()
     git_tag = args.git_tag_message
+    s = datetime.datetime.now(pytz.utc) - build.get_timestamp().total_seconds()
     
     if build.is_running():
-        duration = str(datetime.timedelta((datetime.datetime.now(pytz.utc) - build.get_timestamp()).total_seconds()))
+        duration = datetime.timedelta(seconds=s)
     else: # If the job is completed
         duration = str(build.get_duration())
 
